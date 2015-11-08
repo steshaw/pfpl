@@ -1,0 +1,28 @@
+name:                exp
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            http://github.com/steshaw/exp#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Steven Shaw
+maintainer:          steven@steshaw.org
+copyright:           (c) 2015, Steven Shaw
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+executable exp-exe
+  hs-source-dirs:      .
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , unbound == 0.4.4
+                     , parsec
+                     , transformers
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/steshaw/exp
